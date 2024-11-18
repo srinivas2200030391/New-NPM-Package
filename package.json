@@ -1,10 +1,12 @@
 {
-  "name": "firstnpmpackage",
+  "name": "srinivas-first-package",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx rollup -c"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "@rollup/plugin-typescript": "^12.1.1",
     "@types/react": "^18.3.12",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tslib": "^2.8.1"
   }
 }

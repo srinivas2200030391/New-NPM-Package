@@ -1,23 +1,24 @@
-import React,{ReactNode} from 'react'
-
-
+import * as React from "react";
+import { ReactNode } from "react";
 
 type PropsType = {
-    children: ReactNode
+  children: ReactNode;
+};
+export default function Button({ children }: PropsType) {
+  return (
+    <button
+      style={{
+        padding: "10px 20px",
+        fontSize: "1.2rem",
+        borderRadius: "5px",
+        backgroundColor: "blue",
+        color: "white",
+        border: "none",
+        cursor: "pointer",
+      }}>
+      {children}
+    </button>
+  );
 }
-export default function Button({children}:PropsType) {
-    return (
-        <button style={{
-            padding: '10px 20px',
-            fontSize: "1.2rem",
-            borderRadius: '5px',
-            backgroundColor: 'blue',
-            color: 'white',
-            border: 'none',
-            cursor: 'pointer'
 
-        }}>
-            {children}
-      </button>
-  )
-}
+export { Button };
